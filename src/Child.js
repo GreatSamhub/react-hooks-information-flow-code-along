@@ -1,8 +1,15 @@
 import React from "react";
-import { getRandomColor } from "./randomColorGenerator.js";
+//import { getRandomColor } from "./randomColorGenerator.js";
 
 function Child({ onChangeColor }) {
-  return <div className="child" style={{ backgroundColor: "#FFF" }} />;
+  console.log(onChangeColor)
+  return (
+  <div 
+  className="child" 
+  onclick = {onChangeColor}
+  style={{ backgroundColor: "#FFF" }} 
+  />
+  )
 }
 
 export default Child;
